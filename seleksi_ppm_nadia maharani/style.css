@@ -1,0 +1,22 @@
+.jumbotron {
+    padding-top: 5rem;
+    background-color: #92d2eb6c;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+.carousel-item {
+	height: 570px;
+}
+
+.carousel-item img{
+	margin-top: -120px;
+}
+
+h6 {
+	color: #F2EDEC;
+	font-size: 12px;
+	font-weight: normal;
+}
