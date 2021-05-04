@@ -1,0 +1,12 @@
+MariaDB [nadia_maharani]> ALTER TABLE regencies RENAME TO kabupaten_kota;
+Query OK, 0 rows affected (0.250 sec)
+
+MariaDB [nadia_maharani]> desc kabupaten_kota;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | char(4)      | NO   | PRI | NULL    |       |
+| province_id | char(2)      | NO   | MUL | NULL    |       |
+| name        | varchar(255) | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+3 rows in set (0.019 sec)

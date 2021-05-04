@@ -1,0 +1,13 @@
+MariaDB [nadia_maharani]> ALTER TABLE provinces RENAME TO provinsi;
+Query OK, 0 rows affected (0.310 sec)
+
+MariaDB [nadia_maharani]> desc provinces;
+ERROR 1146 (42S02): Table 'nadia_maharani.provinces' doesn't exist
+MariaDB [nadia_maharani]> desc provinsi;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| id    | char(2)      | NO   | PRI | NULL    |       |
+| name  | varchar(255) | NO   |     | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+2 rows in set (0.013 sec)

@@ -1,0 +1,7 @@
+MariaDB [nadia_maharani]> SELECT * FROM kabupaten_kota WHERE id='1101';
++------+-------------+--------------------+
+| id   | province_id | name               |
++------+-------------+--------------------+
+| 1101 | 11          | KABUPATEN SIMEULUE |
++------+-------------+--------------------+
+1 row in set (0.002 sec)

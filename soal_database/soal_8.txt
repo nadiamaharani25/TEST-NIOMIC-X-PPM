@@ -1,0 +1,16 @@
+MariaDB [nadia_maharani]> SELECT * FROM kecamatan WHERE regency_id='1101';
++---------+------------+-----------------+
+| id      | regency_id | name            |
++---------+------------+-----------------+
+| 1101010 | 1101       | TEUPAH SELATAN  |
+| 1101020 | 1101       | SIMEULUE TIMUR  |
+| 1101021 | 1101       | TEUPAH BARAT    |
+| 1101022 | 1101       | TEUPAH TENGAH   |
+| 1101030 | 1101       | SIMEULUE TENGAH |
+| 1101031 | 1101       | TELUK DALAM     |
+| 1101032 | 1101       | SIMEULUE CUT    |
+| 1101040 | 1101       | SALANG          |
+| 1101050 | 1101       | SIMEULUE BARAT  |
+| 1101051 | 1101       | ALAFAN          |
++---------+------------+-----------------+
+10 rows in set (0.003 sec)

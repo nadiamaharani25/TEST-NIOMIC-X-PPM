@@ -1,0 +1,12 @@
+MariaDB [nadia_maharani]> ALTER TABLE districts RENAME TO kecamatan;
+Query OK, 0 rows affected (0.264 sec)
+
+MariaDB [nadia_maharani]> desc kecamatan;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| id         | char(7)      | NO   | PRI | NULL    |       |
+| regency_id | char(4)      | NO   | MUL | NULL    |       |
+| name       | varchar(255) | NO   |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+3 rows in set (0.019 sec)

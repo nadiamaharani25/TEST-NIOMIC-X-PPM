@@ -1,0 +1,38 @@
+MariaDB [nadia_maharani]> desc districts;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| id         | char(7)      | NO   | PRI | NULL    |       |
+| regency_id | char(4)      | NO   | MUL | NULL    |       |
+| name       | varchar(255) | NO   |     | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+3 rows in set (0.046 sec)
+
+MariaDB [nadia_maharani]> desc provinces;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| id    | char(2)      | NO   | PRI | NULL    |       |
+| name  | varchar(255) | NO   |     | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+2 rows in set (0.020 sec)
+
+MariaDB [nadia_maharani]> desc regencies;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | char(4)      | NO   | PRI | NULL    |       |
+| province_id | char(2)      | NO   | MUL | NULL    |       |
+| name        | varchar(255) | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+3 rows in set (0.047 sec)
+
+MariaDB [nadia_maharani]> desc villages;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | char(10)     | NO   | PRI | NULL    |       |
+| district_id | char(7)      | NO   | MUL | NULL    |       |
+| name        | varchar(255) | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+3 rows in set (0.013 sec)
